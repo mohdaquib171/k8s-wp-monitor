@@ -16,7 +16,6 @@ metadata:
 spec:
   ports:
     - port: 80
-      targetPort: 80
   selector:
     app: wordpress
   type: LoadBalancer
@@ -32,6 +31,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
+  storageClassName: efs-sc
   resources:
     requests:
       storage: 10Gi
