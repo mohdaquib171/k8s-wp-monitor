@@ -1,0 +1,4 @@
+scrapeConfigs:
+  - job_name: 'nginx'
+    static_configs:
+        - targets: ['nginx-prometheus-exporter-svc.default.svc.cluster.local:9113']
